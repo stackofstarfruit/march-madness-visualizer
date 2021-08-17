@@ -6,7 +6,12 @@ library(tidyr)
 library(ggplot2)
 library(reshape2)
 
-get_page <- read_html("https://kenpom.com")
+### use for live updates
+# get_page <- read_html("https://kenpom.com")
+
+### use for 2021 updates
+get_page <- 
+  read_html("https://web.archive.org/web/20210317101119/https://kenpom.com/");
 
 rank <- 
   get_page %>%
